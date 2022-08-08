@@ -25,6 +25,7 @@
   <name>Hive Common</name>
   <properties>
     <hive.path.to.root>..</hive.path.to.root>
+    <jmh.version>1.23</jmh.version>
   </properties>
   <dependencies>
     <!-- dependencies are always listed in sorted order by groupId, artifactId -->
@@ -229,6 +230,16 @@
     <dependency>
       <groupId>com.tdunning</groupId>
       <artifactId>json</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.openjdk.jmh</groupId>
+      <artifactId>jmh-core</artifactId>
+      <version>${jmh.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.openjdk.jmh</groupId>
+      <artifactId>jmh-generator-annprocess</artifactId>
+      <version>${jmh.version}</version>
     </dependency>
     <dependency>
       <groupId>io.dropwizard.metrics</groupId>
